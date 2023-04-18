@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function showmessage()
+      {
+        alert("submitted");
+      }
+    </script>
+    <center><h1>Registration form</h1></center>
+    <style>
+      table, th{
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightblue">
+    <form>
+    <fieldset>
+        <legend>Personal Info</legend>
+    <table>
+      <tr>
+        <td>Enter you name:</td>
+        <td><input type="text" placeholder="Name" required/></td>
+      </tr>
+      <tr>
+        <td>Enter your age:</td>
+        <td>
+          <input type="age" placeholder="Age" />
+        </td>
+      </tr>
+      <tr>
+        <td>Enter your address:</td>
+        <td><textarea placeholder="Address"></textarea></td>
+      </tr>
+      <tr>
+        <td>Enter a number from range 0-100:</td>
+        <td><input type="number" min="0" max="100" step="2"/></td>
+      </tr>
+      <tr>
+        <td>Select a browser of your preference:</td>
+        <td>
+          <input list="browsers"/>
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Brave"></option>
+          </datalist>
+        </td>
+      </tr>
+      <input type="button" onclick="showmessage()" value="Submit">
+      </table>
+    </fieldset>
+  </form>
+  </body>
+</html> 

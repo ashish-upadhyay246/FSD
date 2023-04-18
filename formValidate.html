@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+          function validate()
+          {
+              var name=document.getElementById("name").value;
+              var pass=document.forms["myform"]["pass"].value;
+              if(name=="" || name==null)
+              {
+                alert("Name can't be empty.");
+                return false;
+              }
+              else if(pass.length<6)
+              {
+                alert("Password cant be shorter than 6 characters.");
+                return false;
+              }
+          }
+        </script>
+    </head>
+    <body>
+        <form name="myform" onsubmit="validate()">
+          Name:<input id="name"/><br/>
+          Password:<input type="password" id="pass"/><br/>
+          <button onclick="validate">Submit</button>
+        </form>
+    </body>
+</html>

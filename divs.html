@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change background color of paragraph div</title>
+    <script>
+      function changeColor() {
+        var num = prompt("Enter the paragraph number (1-5):");
+        var color=prompt("Enter the color.");
+        var div = document.getElementById("div" + num);
+        if (div) {
+          div.style.backgroundColor = color;
+        } else {
+          alert("Invalid paragraph number!");
+        }
+      }
+    </script>
+    <style>
+      div {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <p>Paragraph 1</p>
+    </div>
+    <div id="div2">
+      <p>Paragraph 2</p>
+    </div>
+    <div id="div3">
+      <p>Paragraph 3</p>
+    </div>
+    <div id="div4">
+      <p>Paragraph 4</p>
+    </div>
+    <div id="div5">
+      <p>Paragraph 5</p>
+    </div>
+    <button onclick="changeColor()">Change color</button>
+  </body>
+</html>

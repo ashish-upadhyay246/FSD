@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h2>JavaScript new Date()</h2>
+    Enter your birthdate: <br />Day <input type="number" id="day" />
+    Month <input type="number" id="mon" />
+    Year <input type="number" id="yy" />
+    <button onclick="age()">Submit</button>
+    <input id="answer"/>
+        <script>
+            function age() {
+                var d=new Date();
+                var date = document.getElementById("day").value;
+                var mon = document.getElementById("mon").value;
+                var yy = document.getElementById("yy").value;
+                var months=((d.getFullYear()-yy)*12)-mon-1;
+                
+                var age=months/12;
+                document.getElementById("answer").value=age;
+            }
+        </script>
+
+</body>
+
+</html>

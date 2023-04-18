@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <p>The splice() method adds new elements to an array.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        function myFunction() {
+            fruits.splice(0,0,"Ashish","Lmao what?");
+            document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+        }
+    </script>
+</body>
+
+</html>
